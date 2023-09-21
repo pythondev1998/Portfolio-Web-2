@@ -229,10 +229,7 @@ h6 {
 
 /*--------------------------------------------------------------
 # Hero Section
- background: url("https://onedrive.live.com/embed?resid=E38F63EA0E32E3B9%21329158&authkey=%21AIecSZtjAYSXy3E&width=4460&height=2973") top center;
-  background: url("https://1drv.ms/f/s!ArnjMg7qY4_jlItO-_Cv7EA3f6lwtQ?e=0F4QGn") top center;
 --------------------------------------------------------------*/
-
 
 #hero {
   position: relative;
@@ -643,6 +640,17 @@ section {
   top: 0;
   background: #F5F5F7;
   border: 2px solid #0d5b34;
+}
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  /* Añade estos estilos para que los elementos se muestren horizontalmente */
+}
+
+.horizontal-list li {
+  margin-right: 10px; /* Espacio entre elementos */
 }
 
 /*--------------------------------------------------------------
