@@ -23,6 +23,8 @@ def send_email():
         message = request.form['message']
         subject_form = request.form['subject']
 
+
+       
         # Create a yagmail.SMTP object
         yag = yagmail.SMTP(GMAIL_SENDER, GMAIL_PASSWORD)
 
@@ -31,6 +33,7 @@ def send_email():
         msg_body = f'Nombre: {fullname}\nCorreo electrónico: {email}\nMensaje: {message}'
 
         yag.send(to=[GMAIL_USERNAME], subject=subject, contents=msg_body)
+        print()
 
         # Respuesta JSON en caso de éxito
         response = {"success": True, "message": "Tu mensaje ha sido enviado. ¡Gracias!"}
